@@ -12,7 +12,7 @@ const ProductPage = () => {
     <Layout>
       <p
         onClick={() => router.push("/shop")}
-        className="m-0 w-full cursor-pointer text-left text-3xl font-medium tracking-[0.2em] transition-all duration-300 ease-out hover:font-semibold hover:tracking-[0.3em]"
+        className="m-0 w-full cursor-pointer text-center text-3xl font-medium tracking-[0.2em] transition-all duration-300 ease-out hover:font-semibold hover:tracking-[0.3em] md:text-left "
       >
         GO BACK
       </p>
@@ -36,7 +36,7 @@ const ProductPage = () => {
           <p className="text-center text-lg">Price: {ProductsData.price[rata]}</p>
         </div>
 
-        <div className="grid-cols-[40%,60%] grid-rows-1 md:grid">
+        <div className="hidden md:grid md:grid-cols-[40%,60%] md:grid-rows-1">
           <div className="relative h-[40rem]">
             <Image src={`/assets/images/products/${id}.jpg`} alt={`${id}`} layout="fill" objectFit="cover" className="rounded-md" />
           </div>
