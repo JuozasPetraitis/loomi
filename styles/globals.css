@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply select-none text-center font-Melodrama text-7xl font-medium uppercase leading-none;
+  }
+  h2 {
+    @apply mx-auto max-w-3xl select-none text-center font-Melodrama text-4xl font-light uppercase leading-none;
+  }
+  p {
+    @apply cursor-default font-Outfit font-light;
+  }
+  button {
+    @apply rounded-sm border border-gray-600 py-2 px-8;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply select-none font-Vestige text-7xl font-black uppercase;
+  }
+  .link {
+    @apply after:relative after:left-[-8px] after:top-[2px] after:block after:h-[1px] after:w-[calc(100%_+_12px)] after:bg-white/70 after:content-[''];
+  }
+}
+
+@font-face {
+  font-family: "Vestige";
+  src: url("../fonts/Vestige.otf");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url("../fonts/Josefin.ttf");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Melodrama";
+  src: url("../fonts/Melodrama.ttf");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit.ttf");
+  font-weight: 100 900;
+}
